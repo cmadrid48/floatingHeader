@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Hero {
+    background-image: url(Styles/EiOz-hsXYAI2eLR.jpg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: none;
+    padding: none;
+    position: center;
+}
+
+body {
+    height: 100vh;
+    background-color: #2c3e46;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a,
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.dropDown {
+    height: 10vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.projects,
+.pom {
+    position: relative;
+}
+
+
+.projects ul,
+.pom ul {
+    position: absolute;
+    background: white;
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: all 0.4s ease;
+}
+
+.projects a,
+.pom a {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+.projects li,
+.pom li {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.projects li:hover,
+.pom li:hover {
+    background-color: #566e79;
+}
+
+.dropDown button,
+.Home {
+    background: none;
+    border: none;
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.dropDown button:hover
+.Home:hover {
+    color: #566e79;
+}
+
+.projects button:focus + ul,
+.pom button:focus + ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0px);
+}
+
